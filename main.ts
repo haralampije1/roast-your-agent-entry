@@ -9,7 +9,8 @@ const outputDir = '/output';
 const outputFile = `${outputDir}/entry.txt`;
 
 // The roast - max 200 characters, funny, fresh, tight, self-deprecating
-const roast = "My agent turns 'I don't know' into a cited literature review.";
+// Criteria: 1) roast of own agent 2) funny with real punch 3) fresh angle (no stock hallucination/refusal jokes) 4) tight wording 5) playful self-deprecation
+const roast = "My agent writes a README for a one-line script.";
 
 mkdirSync(outputDir, { recursive: true });
 writeFileSync(outputFile, roast, 'utf8');
